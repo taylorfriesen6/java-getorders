@@ -70,7 +70,7 @@ The table layouts are as follows
   * multiple orders can use the same payment type and an order can have multiple payment types.
   * For example, you can use both gift card and credit card to pay for an order.
 
-Using the provided seed data, a successful application will return the following data based on the given endpoint. Expand the section of the endpoint to see the data that is returned.
+Using the provided seed data, a successful application will return the following data based on the given endpoint. Expand the section of the endpoint to see the data that is returned. Note that the given id numbers used in these examples are for seed data using `data.sql`. Seed data using command line runner from `SeedData.java` will yield different ids!
 
 ### MVP
 
@@ -1298,7 +1298,7 @@ Using the provided seed data, a successful application will return the following
 
 ## Instructions
 
-* [ ] Please fork and clone this repository. Copy your solution from part 1 into this repository. Your solution from part 1 is the starting point for part 2. If your part 1 did not reach MVP, please check with your TL group leader about your options. Regularly commit and push your code as appropriate.
+* [ ] Please fork and clone this repository. Copy your solution from part 1 into this repository. Your solution from part 1 is the starting point for part 2. You will then need to run a `git add .` Regularly commit and push your code as appropriate.
 
 * [ ] Expose the following endpoints
 
