@@ -26,4 +26,12 @@ public class CustomerServicesImpl implements CustomerServices{
     public Customer findByCustcode(long custcode) {
         return restrepos.findByCustcode(custcode);
     }
+
+    @Override
+    public List<Customer> findByNameLike(String matcher) {
+        //System.out.println(matcher);
+        List<Customer> result = restrepos.findByCustnameContainingIgnoringCase(matcher);
+        //System.out.println(result);
+        return result;
+    }
 }

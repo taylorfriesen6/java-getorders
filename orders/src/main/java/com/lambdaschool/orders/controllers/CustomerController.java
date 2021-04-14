@@ -26,7 +26,12 @@ public class CustomerController {
 
     @GetMapping(value = "/customer/{custcode}", produces = "application/json")
     public ResponseEntity<Customer> getCustomerByCustcode (@PathVariable long custcode) {
-
         return new ResponseEntity<>(customerServices.findByCustcode(custcode), HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/namelike/{matcher}", produces = "application/json")
+    public ResponseEntity<List<Customer>> getByNameLike (@PathVariable String matcher) {
+        List<Customer> customers = customerServices.findByNameLike(matcher);
+        return new ResponseEntity<>(customers, HttpStatus.OK);
     }
 }
