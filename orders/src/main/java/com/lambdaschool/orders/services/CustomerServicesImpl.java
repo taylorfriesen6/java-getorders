@@ -21,4 +21,9 @@ public class CustomerServicesImpl implements CustomerServices{
         restrepos.findAll().iterator().forEachRemaining(list::add);
         return list;
     }
+
+    @Override
+    public Customer findByCustcode(long custcode) {
+        return restrepos.findByCustcode(custcode);
+    }
 }
